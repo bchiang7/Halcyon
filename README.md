@@ -1,6 +1,7 @@
 # Halcyon
 Sublime UI &amp; syntax themes based on [ayu](https://github.com/dempfi/ayu)
 
+## User Settings
 ```
 {
   "always_show_minimap_viewport": true,
