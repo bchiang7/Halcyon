@@ -1,9 +1,9 @@
 // prefix="Widget - "
-// sublime="2"
+// sublime=""
 // ext="sublime-settings"
 {
-  "color_scheme": "Packages/Halcyon/widgets/Widget - Halcyon-mirage.stTheme",
+  "color_scheme": "Packages/Halcyon/widgets/Widget - halcyon.stTheme",
   "draw_shadows": false,
   "font_options": ["subpixel_antialias"],
-  "line_padding_top": 3
+  "line_padding_top": 2
 }
