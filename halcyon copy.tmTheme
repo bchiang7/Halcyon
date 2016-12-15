@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>ayu</string>
 	<key>semanticClass</key>
-	<string>ayu.mirage</string>
+	<string>halcyon</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -145,11 +145,22 @@ a {
 			<key>name</key>
 			<string>Tag</string>
 			<key>scope</key>
-			<string>entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter</string>
+			<string>entity.name.tag, meta.tag.sgml</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#46c8e3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Git Gutter Deleted</string>
+			<key>scope</key>
+			<string>markup.deleted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#F07178</string>
 			</dict>
 		</dict>
 		<dict>
