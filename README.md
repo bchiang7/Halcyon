@@ -1,5 +1,5 @@
 # Halcyon
-Sublime UI &amp; syntax themes based on [ayu](https://github.com/dempfi/ayu)
+Sublime Text 3 UI &amp; syntax themes based on [ayu](https://github.com/dempfi/ayu) and [Materialize One Dark] (https://github.com/saadq/Materialize).
 
 ## User Settings
 ```
@@ -23,7 +23,7 @@ Sublime UI &amp; syntax themes based on [ayu](https://github.com/dempfi/ayu)
   [
     "subpixel_antialias"
   ],
-  "font_size": 16,
+  "font_size": 14,
   "highlight_line": true,
   "highlight_modified_tabs": true,
   "ignored_packages":
@@ -46,20 +46,19 @@ Sublime UI &amp; syntax themes based on [ayu](https://github.com/dempfi/ayu)
   [
     80
   ],
-  "save_on_focus_lost": true,
   "scroll_past_end": true,
   "scroll_speed": 5.0,
   "show_full_path": true,
   "show_line_endings": true,
   "spell_check": false,
   "tab_size": 2,
-  "theme": "ayu-mirage.sublime-theme",
+  "theme": "Material One Dark.sublime-theme",
+  "theme": "halcyon.sublime-theme",
+  "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
-  "ui_big_tabs": true,
-  "ui_fix_tab_labels": true,
-  "ui_font_size_small": true,
-  "ui_separator": true,
+  "use_simple_full_screen": true,
   "word_wrap": true,
   "wrap_width": 80
 }
+
 ```
