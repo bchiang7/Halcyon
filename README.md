@@ -1,7 +1,21 @@
-# Halcyon
-Sublime Text 3 UI &amp; syntax themes based on [ayu](https://github.com/dempfi/ayu) and [Materialize One Dark] (https://github.com/saadq/Materialize).
+# Halcyon Theme
+Sublime Text 3 UI &amp; syntax themes based on [ayu mirage](https://github.com/dempfi/ayu) and [Materialize One Dark] (https://github.com/saadq/Materialize).
 
-## User Settings
+## Installation
+
+1. Clone or download this repo, then extract and rename the folder to "Halcyon".
+1. Move the folder inside your sublime Packages directory. **(Preferences > Browse packages...)**
+
+## Activation
+
+Activate the theme with the following preferences at **(Preferences > Setting - User)**
+
+    "color_scheme": "Packages/Halcyon/halcyon.tmTheme",
+    "theme": "halcyon.sublime-theme"
+
+Note: You should probably restart Sublime after activating the theme
+
+## My Personal User Settings
 ```
 {
   "always_show_minimap_viewport": true,
@@ -52,7 +66,6 @@ Sublime Text 3 UI &amp; syntax themes based on [ayu](https://github.com/dempfi/a
   "show_line_endings": true,
   "spell_check": false,
   "tab_size": 2,
-  "theme": "Material One Dark.sublime-theme",
   "theme": "halcyon.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_trailing_white_space_on_save": true,
