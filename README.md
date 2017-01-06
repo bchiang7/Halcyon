@@ -16,7 +16,7 @@ Activate the theme with the following preferences at **(Preferences > Setting - 
 Note: You should probably restart Sublime after activating the theme
 
 ## UI Colors
-<img width="100px" src="https://raw.githubusercontent.com/bchiang7/Halcyon/master/colors.svg">
+<img width="100%" src="https://raw.githubusercontent.com/bchiang7/Halcyon/master/colors.svg">
 
 ## My Personal User Settings
 ```
