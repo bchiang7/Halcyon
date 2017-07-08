@@ -127,7 +127,7 @@
   {
     "class": "tool_tip_label_control",
     "color": [96, 112, 128],
-    "font.face": "",
+    "font.face": "Fira Mono",
     "font.size": 11
   },
 
@@ -334,7 +334,7 @@
     "font.size": 11,
     "font.italic": false,
     "font.bold": false,
-    "font.face": ""
+    "font.face": "Fira Mono"
   },
 
   // Tab selected label color
@@ -485,7 +485,7 @@
     "class": "sidebar_heading",
     "color": [250, 250, 250],
     "font.face": "",
-    "font.bold": true,
+    "font.bold": false,
     "font.size": 11
   },
 
@@ -508,7 +508,7 @@
     "color": [96, 112, 128],
     "shadow_color": [0, 0, 0],
     "shadow_offset": [0, 0],
-    "font.face": "",
+    "font.face": "Fira Mono",
     "font.size": 11
   },
 
@@ -537,7 +537,7 @@
     "class": "sidebar_label",
     "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
     "settings": ["bold_folder_labels"],
-    "font.bold": true
+    "font.bold": false
   },
 
   {
@@ -556,7 +556,7 @@
     "class": "sidebar_label",
     "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
     "settings": ["bold_folder_labels"],
-    "font.bold": true
+    "font.bold": false
   },
 
   {
@@ -908,7 +908,7 @@
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.bold": false,
-    "font.face": "",
+    "font.face": "Fira Mono",
     "font.size": 11
   },
 

@@ -189,11 +189,22 @@ a {
 			<key>name</key>
 			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
 			<key>scope</key>
-			<string>constant.numeric, constant.language, support.constant, constant.character, keyword.other.unit</string>
+			<string>constant.numeric, constant.language, constant.character, keyword.other.unit</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#c3a6ff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
+			<key>scope</key>
+			<string>support.constant</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ABB2BF</string>
 			</dict>
 		</dict>
 		<dict>
