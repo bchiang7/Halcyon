@@ -1,5 +1,5 @@
 # Halcyon Theme
-Sublime Text 3 UI &amp; syntax themes based on [ayu mirage](https://github.com/dempfi/ayu) and [Materialize One Dark] (https://github.com/saadq/Materialize).
+Sublime Text 3 UI &amp; syntax themes based on [ayu mirage](https://github.com/dempfi/ayu) and [Materialize One Dark](https://github.com/saadq/Materialize).
 
 ## Installation
 
