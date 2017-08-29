@@ -32,7 +32,7 @@ Note: You should probably restart Sublime after activating the theme
 `#abb2bf`
 `#95e6cb`
 
-## My Personal User Settings
+## Sublime User Settings
 ```
 {
   "always_show_minimap_viewport": true,
