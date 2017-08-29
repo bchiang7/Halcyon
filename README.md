@@ -18,6 +18,20 @@ Note: You should probably restart Sublime after activating the theme
 ## UI Colors
 <img width="100px" src="https://raw.githubusercontent.com/bchiang7/Halcyon/master/colors.png">
 
+`#212733`
+`#191e27`
+`#ffcc66`
+`#607080`
+`#c3a6ff`
+`#ffae57`
+`#80d4ff`
+`#46c8e3`
+`#f07178`
+`#ffd580`
+`#a7d865`
+`#abb2bf`
+`#95e6cb`
+
 ## My Personal User Settings
 ```
 {
