@@ -19,6 +19,12 @@
 
 1. Clone or download this repo
 1. Move the downloaded folder inside your sublime `Packages` directory. `Preferences > Browse packages...`
+1. Then, open `Preferences` → `Settings - User`. Add the following lines.
+  ```json
+  "color_scheme": "Packages/Halcyon/Halcyon.tmTheme",
+  "theme": "Halcyon.sublime-theme"
+  ```
+1. Finally, restart Sublime for the Theme to be fully applied.
 
 ## Options
 
