@@ -34,7 +34,7 @@ Change the sidebar's font size by using these settings in your user config:
 
 ```json
 "sidebar_font_small": true
-"sidebar_font_big": true
+"sidebar_font_large": true
 ```
 
 ### Sidebar Padding
