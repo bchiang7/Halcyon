@@ -1,39 +1,85 @@
-# Halcyon Theme
-Sublime Text 3 UI &amp; syntax themes based on [ayu mirage](https://github.com/dempfi/ayu) and [Materialize One Dark](https://github.com/saadq/Materialize).
+# Halcyon Theme for Sublime Text
 
 ## Installation
 
-1. Clone or download this repo, then extract and rename the folder to "Halcyon".
-1. Move the folder inside your sublime Packages directory. **(Preferences > Browse packages...)**
+1. Open package control `Tools` → `Command Palette` and type `Install Package`
+2. Search for Halcyon and hit enter
+3. Then, open `Preferences` → `Settings - User`. Add the following lines.
+  ```json
+  "color_scheme": "Packages/Halcyon/Halcyon.tmTheme",
+  "theme": "Halcyon.sublime-theme"
+  ```
+4. Finally, restart Sublime for the Theme to be fully applied.
 
-## Activation
+`color_scheme` defines how the code looks and `theme` defines how the sidebar, tabs, search, command palette work.
 
-Activate the theme with the following preferences at **(Preferences > Setting - User)**
+## Manual Installation
 
-    "color_scheme": "Packages/Halcyon/halcyon.tmTheme",
-    "theme": "halcyon.sublime-theme"
+1. Clone or download this repo
+1. Move the downloaded folder inside your sublime `Packages` directory. `Preferences > Browse packages...`
 
-Note: You should probably restart Sublime after activating the theme
+## Options
 
-## UI Colors
-<img width="100px" src="https://raw.githubusercontent.com/bchiang7/Halcyon/master/colors.png">
+### Sidebar Font Size
 
-`#212733`
-`#191e27`
-`#ffcc66`
-`#607080`
-`#c3a6ff`
-`#ffae57`
-`#80d4ff`
-`#46c8e3`
-`#f07178`
-`#ffd580`
-`#a7d865`
-`#abb2bf`
-`#95e6cb`
+Change the sidebar's font size by using these settings in your user config:
+
+```json
+"sidebar_font_small": true
+"sidebar_font_big": true
+```
+
+### Sidebar Padding
+
+Adjust the sidebar's padding by using these settings in your user config:
+
+```json
+"sidebar_small": true
+"sidebar_large": true
+```
+
+### Tab Size
+
+Change the size of the tabs by using these settings in your user config:
+
+```json
+"tabs_small": true
+"tabs_large": true
+```
+
+## Colors
+
+Theme Background `#191e27`
+
+Editor Background `#212733`
+
+Accent Yellow `#ffcc66`
+
+Accent Grey `#738699`
+
+White `#d9d7ce`
+
+Blue `#5ccfe6`
+
+Green `#bae67e`
+
+Orange `#ffae57`
+
+Yellow `#ffd580`
+
+Purple `#c3a6ff`
+
+Red `#f07178`
+
+Grey `#abb2bf`
+
+Dark Grey `#607080`
+
+Seafoam `#95e6cb`
 
 ## Sublime User Settings
-```
+
+``` json
 {
   "always_show_minimap_viewport": true,
   "bold_folder_labels": true,
@@ -49,7 +95,7 @@ Note: You should probably restart Sublime after activating the theme
   "ensure_newline_at_eof_on_save": true,
   "fade_fold_buttons": false,
   "find_selected_text": true,
-  "font_face": "Inconsolata for Powerline",
+  "font_face": "Inconsolata",
   "font_options":
   [
     "subpixel_antialias"
@@ -73,10 +119,6 @@ Note: You should probably restart Sublime after activating the theme
   "material_theme_tabs_autowidth": true,
   "original_color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
   "overlay_scroll_bars": "enabled",
-  "rulers":
-  [
-    80
-  ],
   "scroll_past_end": true,
   "scroll_speed": 5.0,
   "show_full_path": true,
@@ -90,5 +132,14 @@ Note: You should probably restart Sublime after activating the theme
   "word_wrap": true,
   "wrap_width": 80
 }
-
 ```
+
+## Reference
+
+[Sublime UI Theme Reference](https://www.sublimetext.com/docs/3/themes.html)
+
+[Sublime Color Scheme Reference](http://docs.sublimetext.info/en/latest/reference/color_schemes.html)
+
+[Sublime Scope Naming](https://www.sublimetext.com/docs/3/scope_naming.html)
+
+Colors based on [Ayu Mirage Theme](https://github.com/dempfi/ayu)
