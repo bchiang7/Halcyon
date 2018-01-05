@@ -1,5 +1,7 @@
 # Halcyon Theme for Sublime Text
 
+![demo](https://raw.githubusercontent.com/bchiang7/Halcyon/master/images/demo.png)
+
 ## Installation
 
 1. Open package control `Tools` → `Command Palette` and type `Install Package`
@@ -48,6 +50,8 @@ Change the size of the tabs by using these settings in your user config:
 ```
 
 ## Colors
+
+![colors](https://raw.githubusercontent.com/bchiang7/Halcyon/master/images/colors.png)
 
 Theme Background `#191e27`
 
