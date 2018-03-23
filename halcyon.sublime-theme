@@ -11,9 +11,9 @@
   * Style for empty (no tabs) window
   ========================================================================= */
   {
-    "class" : "sheet_container_control",
-    "layer0.tint" : [33, 39, 51],
-    "layer0.opacity" : 1.0
+    "class": "sheet_container_control",
+    "layer0.tint": [33, 39, 51],
+    "layer0.opacity": 1.0
   },
   /* @ GRID LAYOUT
   * Grid style
@@ -47,7 +47,7 @@
   ========================================================================= */
   {
     "class": "fold_button_control",
-    "layer0.texture": "Halcyon/assets/unfold.png",
+    "layer0.texture": "Halcyon Theme/assets/unfold.png",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": 0,
     "layer0.tint": [171, 178, 191],
@@ -61,7 +61,7 @@
   {
     "class": "fold_button_control",
     "attributes": ["expanded"],
-    "layer0.texture": "Halcyon/assets/fold.png"
+    "layer0.texture": "Halcyon Theme/assets/fold.png"
   },
   /* @ AUTOCOMPLETE
   * Autocomplete popup setting and behavioring
@@ -116,11 +116,11 @@
   // Command Panel
   {
     "class": "overlay_control",
-    "layer0.texture": "Halcyon/assets/overlay-shadow.png",
+    "layer0.texture": "Halcyon Theme/assets/overlay-shadow.png",
     "layer0.inner_margin": [25, 45, 25, 35],
     "layer0.opacity": 1.0,
     "layer0.tint": [17, 20, 26],
-    "layer1.texture": "Halcyon/assets/overlay-bg.png",
+    "layer1.texture": "Halcyon Theme/assets/overlay-bg.png",
     "layer1.inner_margin": [25, 45, 25, 35],
     "layer1.opacity": 1.0,
     "layer1.tint": [39, 45, 56],
@@ -158,14 +158,14 @@
   // Row panel style inside comman panel (cmd + p)
   {
     "class": "quick_panel_row",
-    "parents": [{"class": "overlay_control"}],
+    "parents": [{ "class": "overlay_control" }],
     "layer0.tint": [39, 45, 56],
     "layer0.opacity": 1.0
   },
   // Quick panel (project) style inside overlay_control (cmd + shift + p)
   {
     "class": "quick_panel",
-    "parents": [{"class": "overlay_control"}],
+    "parents": [{ "class": "overlay_control" }],
     "row_padding": [10, 7],
     "layer0.tint": [39, 45, 56],
     "layer0.opacity": 1.0
@@ -187,7 +187,7 @@
   // Panel labels
   {
     "class": "quick_panel_label",
-    "parents": [{"class": "overlay_control"}],
+    "parents": [{ "class": "overlay_control" }],
     "fg": [96, 112, 128],
     "match_fg": [255, 204, 102],
     "selected_fg": [217, 215, 206],
@@ -243,7 +243,7 @@
     "layer0.opacity": 1.0,
     "layer1.texture": "",
     // yellow bottom line
-    "layer2.texture": "Halcyon/assets/separator-bottom.png",
+    "layer2.texture": "Halcyon Theme/assets/separator-bottom.png",
     "layer2.tint": [255, 204, 102],
     "layer2.inner_margin": [1, 0, 1, 2],
     "layer2.opacity": 0.0,
@@ -257,19 +257,22 @@
   },
   // Selected current tab
   {
-    "class": "tab_control", "attributes": ["selected"],
+    "class": "tab_control",
+    "attributes": ["selected"],
     "layer2.opacity": 1.0,
     "layer3.opacity": 0.0
   },
   // Hovered current tab
   {
-    "class": "tab_control", "attributes": ["hover"],
+    "class": "tab_control",
+    "attributes": ["hover"],
     "layer2.opacity": 0.5,
     "layer3.opacity": 0.5
   },
   // Selected current tab
   {
-    "class": "tab_control", "attributes": ["selected","hover"],
+    "class": "tab_control",
+    "attributes": ["selected", "hover"],
     "layer2.opacity": 1.0,
     "layer3.opacity": 0.1
   },
@@ -284,7 +287,7 @@
   // Tab selected label color
   {
     "class": "tab_label",
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "tab_control", "attributes": ["selected"] }],
     "fg": [217, 215, 206],
     "shadow_color": [33, 39, 51, 0],
     "shadow_offset": [0, 0]
@@ -299,13 +302,13 @@
     "class": "tab_close_button",
     "content_margin": [0, 0],
     // Close Icon
-    "layer0.texture": "Halcyon/assets/close.png",
+    "layer0.texture": "Halcyon Theme/assets/close.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     // Dirty Icon
-    "layer1.texture": "Halcyon/assets/dirty.png",
+    "layer1.texture": "Halcyon Theme/assets/dirty.png",
     "layer1.tint": [96, 112, 128],
-    "layer1.opacity": 0,
+    "layer1.opacity": 0
   },
   // Default
   {
@@ -323,7 +326,7 @@
   // Dirty tab
   {
     "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+    "parents": [{ "class": "tab_control", "attributes": ["dirty"] }],
     "layer0.opacity": 0, // Close Icon
     "layer1.opacity": 1.0, // dirty Icon
     "content_margin": [8, 8]
@@ -331,7 +334,7 @@
   // Dirty tab on hover
   {
     "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
+    "parents": [{ "class": "tab_control", "attributes": ["dirty"] }],
     "attributes": ["hover"],
     "layer0.opacity": 1.0, // Close Icon
     "layer1.opacity": 0 // Close Icon
@@ -339,7 +342,9 @@
   // Selected dirty tab
   {
     "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "parents": [
+      { "class": "tab_control", "attributes": ["selected", "dirty"] }
+    ],
     "layer0.opacity": 0, // Close Icon
     "layer1.opacity": 1.0, // Dirty Icon
     "layer1.tint": [255, 204, 102]
@@ -347,7 +352,9 @@
   // Selected dirty tab on hover
   {
     "class": "tab_close_button",
-    "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
+    "parents": [
+      { "class": "tab_control", "attributes": ["selected", "dirty"] }
+    ],
     "attributes": ["hover"],
     "layer0.opacity": 1.0,
     "layer1.opacity": 0
@@ -356,7 +363,7 @@
   {
     "class": "scroll_tabs_left_button",
     "content_margin": [12, 15],
-    "layer0.texture": "Halcyon/assets/arrow-left.png",
+    "layer0.texture": "Halcyon Theme/assets/arrow-left.png",
     "layer0.tint": [62, 75, 89],
     "layer0.opacity": 1.0
   },
@@ -368,7 +375,7 @@
   {
     "class": "scroll_tabs_right_button",
     "content_margin": [12, 15],
-    "layer0.texture": "Halcyon/assets/arrow-right.png",
+    "layer0.texture": "Halcyon Theme/assets/arrow-right.png",
     "layer0.tint": [62, 75, 89],
     "layer0.opacity": 1.0
   },
@@ -380,7 +387,7 @@
   {
     "class": "show_tabs_dropdown_button",
     "content_margin": [12, 12],
-    "layer0.texture": "Halcyon/assets/overflow-menu.png",
+    "layer0.texture": "Halcyon Theme/assets/overflow-menu.png",
     "layer0.tint": [62, 75, 89],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [0, 0]
@@ -425,7 +432,7 @@
   // Sidebar rows
   {
     "class": "tree_row",
-    "layer0.texture": "Halcyon/assets/sidebar-row-selected.png",
+    "layer0.texture": "Halcyon Theme/assets/sidebar-row-selected.png",
     "layer0.opacity": 0.0,
     "layer0.inner_margin": [1, 1]
   },
@@ -454,45 +461,47 @@
   },
   {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
     "color": [217, 215, 206]
   },
   {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
     "color": [217, 215, 206]
   },
   {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row","attributes": ["expandable"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["expandable"] }],
     "color": [96, 112, 128],
     "font.bold": false
   },
   {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["expandable"] }],
     "settings": ["bold_folder_labels"],
     "font.bold": true
   },
   {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["expandable", "hover"] }],
     "color": [217, 215, 206]
   },
   {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
     "color": [217, 215, 206]
   },
   {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
     "settings": ["bold_folder_labels"],
     "font.bold": true
   },
   {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
+    "parents": [
+      { "class": "tree_row", "attributes": ["expanded", "selected"] }
+    ],
     "color": [217, 215, 206]
   },
   {
@@ -510,12 +519,12 @@
   },
   {
     "class": "icon_file_type",
-    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
     "layer0.opacity": 1
   },
   {
     "class": "icon_file_type",
-    "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
     "layer0.opacity": 1
   },
   // Secondary folder icon (original) used as main folder icon
@@ -524,10 +533,10 @@
     "content_margin": [9, 9],
     "layer0.tint": [33, 39, 51],
     "layer0.opacity": 0,
-    "layer1.texture": "Halcyon/assets/folder.png",
+    "layer1.texture": "Halcyon Theme/assets/folder.png",
     "layer1.tint": [62, 75, 89],
     "layer1.opacity": 1,
-    "layer2.texture": "Halcyon/assets/folder-open.png",
+    "layer2.texture": "Halcyon Theme/assets/folder-open.png",
     "layer2.tint": [255, 204, 102],
     "layer2.opacity": 0.0
   },
@@ -547,22 +556,22 @@
     "parents": [{ "class": "tree_row", "attributes": ["expanded", "hover"] }],
     "layer2.texture": {
       "keyframes": [
-        "Halcyon/assets/folder-open-1.png",
-        "Halcyon/assets/folder-open-1.png",
-        "Halcyon/assets/folder-open-2.png",
-        "Halcyon/assets/folder-open-3.png",
-        "Halcyon/assets/folder-open-4.png",
-        "Halcyon/assets/folder-open-5.png",
-        "Halcyon/assets/folder-open-5.png",
-        "Halcyon/assets/folder-open-5.png",
-        "Halcyon/assets/folder-open-6.png",
-        "Halcyon/assets/folder-open-6.png",
-        "Halcyon/assets/folder-open-6.png",
-        "Halcyon/assets/folder-open-6.png",
-        "Halcyon/assets/folder-open.png"
+        "Halcyon Theme/assets/folder-open-1.png",
+        "Halcyon Theme/assets/folder-open-1.png",
+        "Halcyon Theme/assets/folder-open-2.png",
+        "Halcyon Theme/assets/folder-open-3.png",
+        "Halcyon Theme/assets/folder-open-4.png",
+        "Halcyon Theme/assets/folder-open-5.png",
+        "Halcyon Theme/assets/folder-open-5.png",
+        "Halcyon Theme/assets/folder-open-5.png",
+        "Halcyon Theme/assets/folder-open-6.png",
+        "Halcyon Theme/assets/folder-open-6.png",
+        "Halcyon Theme/assets/folder-open-6.png",
+        "Halcyon Theme/assets/folder-open-6.png",
+        "Halcyon Theme/assets/folder-open.png"
       ],
       "loop": false,
-      "frame_time": 0.020
+      "frame_time": 0.02
     },
     "layer1.opacity": 0.0,
     "layer2.opacity": 1.0
@@ -576,18 +585,18 @@
     "class": "icon_folder_loading",
     "layer1.texture": {
       "keyframes": [
-        "Halcyon/assets/spinner11.png",
-        "Halcyon/assets/spinner10.png",
-        "Halcyon/assets/spinner9.png",
-        "Halcyon/assets/spinner8.png",
-        "Halcyon/assets/spinner7.png",
-        "Halcyon/assets/spinner6.png",
-        "Halcyon/assets/spinner5.png",
-        "Halcyon/assets/spinner4.png",
-        "Halcyon/assets/spinner3.png",
-        "Halcyon/assets/spinner2.png",
-        "Halcyon/assets/spinner1.png",
-        "Halcyon/assets/spinner.png"
+        "Halcyon Theme/assets/spinner11.png",
+        "Halcyon Theme/assets/spinner10.png",
+        "Halcyon Theme/assets/spinner9.png",
+        "Halcyon Theme/assets/spinner8.png",
+        "Halcyon Theme/assets/spinner7.png",
+        "Halcyon Theme/assets/spinner6.png",
+        "Halcyon Theme/assets/spinner5.png",
+        "Halcyon Theme/assets/spinner4.png",
+        "Halcyon Theme/assets/spinner3.png",
+        "Halcyon Theme/assets/spinner2.png",
+        "Halcyon Theme/assets/spinner1.png",
+        "Halcyon Theme/assets/spinner.png"
       ],
       "loop": true,
       "frame_time": 0.075
@@ -601,22 +610,22 @@
   {
     "class": "icon_folder_dup",
     "content_margin": [9, 9],
-    "layer0.texture": "Halcyon/assets/folder.png",
+    "layer0.texture": "Halcyon Theme/assets/folder.png",
     "layer0.tint": [62, 75, 89],
     "layer0.opacity": 1.0,
 
-    "layer1.texture": "Halcyon/assets/folder-symlink.png",
+    "layer1.texture": "Halcyon Theme/assets/folder-symlink.png",
     "layer1.tint": [96, 112, 128],
     "layer1.opacity": 0.3
   },
   {
     "class": "icon_folder_dup",
-    "parents": [{ "class": "tree_row", "attributes": ["hover"]}],
+    "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
     "layer0.tint": [255, 204, 102]
   },
   {
     "class": "icon_folder_dup",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
+    "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
     "layer0.tint": [255, 204, 102]
   },
   // Hidden arrow icon before folder
@@ -628,7 +637,7 @@
   {
     "class": "close_button",
     "content_margin": [8, 8],
-    "layer0.texture": "Halcyon/assets/close.png",
+    "layer0.texture": "Halcyon Theme/assets/close.png",
     "layer0.opacity": 0,
     "layer0.inner_margin": [0, 0],
     "layer0.tint": [96, 112, 128]
@@ -642,7 +651,7 @@
   {
     "class": "close_button",
     "attributes": ["dirty"],
-    "layer0.texture": "Halcyon/assets/dirty.png",
+    "layer0.texture": "Halcyon Theme/assets/dirty.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0
   },
@@ -658,7 +667,7 @@
   // Normal Vertical scrollbar track
   {
     "class": "scroll_bar_control",
-    "layer0.tint" : [33, 39, 51],
+    "layer0.tint": [33, 39, 51],
     "layer0.opacity": 1,
     "layer0.inner_margin": [0, 0],
     "blur": false
@@ -666,7 +675,7 @@
   // Normal Vertical scrollbar track inside overlay panel
   {
     "class": "scroll_bar_control",
-    "parents": [{"class": "overlay_control"}],
+    "parents": [{ "class": "overlay_control" }],
     "layer0.tint": [33, 39, 51, 0],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [0, 2],
@@ -677,7 +686,7 @@
     "class": "scroll_bar_control",
     "attributes": ["horizontal"],
     "layer0.texture": "",
-    "layer0.tint" : [33, 39, 51],
+    "layer0.tint": [33, 39, 51],
     "layer0.inner_margin": [0, 0],
     "blur": false
   },
@@ -685,7 +694,7 @@
   {
     "class": "scroll_corner_control",
     "layer0.texture": "",
-    "layer0.tint":[33, 39, 51],
+    "layer0.tint": [33, 39, 51],
     "layer0.inner_margin": [0, 0],
     "layer0.opacity": 1,
     "blur": false
@@ -722,13 +731,13 @@
   },
   {
     "class": "scroll_area_control",
-    "parents": [{"class": "overlay_control"}],
+    "parents": [{ "class": "overlay_control" }],
     "settings": ["overlay_scroll_bars"],
     "overlay": true // set to false for the original behavior
   },
   {
     "class": "scroll_area_control",
-    "parents": [{"class": "sidebar_container"}],
+    "parents": [{ "class": "sidebar_container" }],
     "settings": ["!overlay_scroll_bars"],
     "overlay": false // set to false for the original behavior
   },
@@ -759,13 +768,21 @@
     "class": "minimap_control",
     "settings": ["!always_show_minimap_viewport"],
     "viewport_color": [100, 100, 100],
-    "viewport_opacity": { "target": 0, "speed": 4.0, "interpolation": "smoothstep" }
+    "viewport_opacity": {
+      "target": 0,
+      "speed": 4.0,
+      "interpolation": "smoothstep"
+    }
   },
   {
     "class": "minimap_control",
     "attributes": ["hover"],
     "settings": ["!always_show_minimap_viewport"],
-    "viewport_opacity": { "target": 0.2, "speed": 4.0, "interpolation": "smoothstep" }
+    "viewport_opacity": {
+      "target": 0.2,
+      "speed": 4.0,
+      "interpolation": "smoothstep"
+    }
   },
   /* @ STATUS BAR
   * Status bar settings and behavioring
@@ -780,7 +797,7 @@
   // Status bar labels
   {
     "class": "label_control",
-    "parents": [{"class": "status_bar"}],
+    "parents": [{ "class": "status_bar" }],
     "color": [96, 112, 128]
   },
   // Text field labels
@@ -789,7 +806,7 @@
     "layer0.texture": "",
     "layer0.tint": [33, 39, 51],
     "layer0.opacity": 0.9,
-    "layer1.texture": "Halcyon/assets/separator-top.png",
+    "layer1.texture": "Halcyon Theme/assets/separator-top.png",
     "layer1.inner_margin": [1, 2, 1, 0],
     "content_margin": [10, 0]
   },
@@ -815,7 +832,7 @@
   // Status bar panel close icon
   {
     "class": "panel_close_button",
-    "layer0.texture": "Halcyon/assets/close.png",
+    "layer0.texture": "Halcyon Theme/assets/close.png",
     "layer0.opacity": 1.0,
     "layer0.tint": [96, 112, 128],
     "content_margin": [0, 0] // 8,8 to show
@@ -829,12 +846,12 @@
   // Texline input
   {
     "class": "text_line_control",
-    "layer0.texture": "Halcyon/assets/input-bg.png",
+    "layer0.texture": "Halcyon Theme/assets/input-bg.png",
     "layer0.opacity": 1,
     "layer0.inner_margin": [10, 8],
     "layer0.tint": [39, 45, 56],
 
-    "layer1.texture": "Halcyon/assets/input-border.png",
+    "layer1.texture": "Halcyon Theme/assets/input-border.png",
     "layer1.opacity": 0.2,
     "layer1.inner_margin": [10, 8],
     "layer1.tint": [96, 112, 128],
@@ -843,10 +860,10 @@
   // Textline input inside overlay panels
   {
     "class": "text_line_control",
-    "parents": [{"class": "overlay_control"}],
+    "parents": [{ "class": "overlay_control" }],
     "layer0.texture": "",
     "layer0.opacity": 0,
-    "layer1.texture": "Halcyon/assets/input-search.png",
+    "layer1.texture": "Halcyon Theme/assets/input-search.png",
     "layer1.opacity": 1,
     "layer1.tint": [255, 204, 102],
     "layer1.inner_margin": [35, 0, 0, 0],
@@ -856,7 +873,7 @@
   {
     "class": "dropdown_button_control",
     "content_margin": [12, 12],
-    "layer0.texture": "Halcyon/assets/overflow-menu.png",
+    "layer0.texture": "Halcyon Theme/assets/overflow-menu.png",
     "layer0.tint": [62, 75, 89],
     "layer0.opacity": 1.0
   },
@@ -874,7 +891,7 @@
     "content_margin": [15, 9, 15, 10],
     "min_size": [60, 0],
     "layer0.tint": [255, 204, 102, 10],
-    "layer0.texture": "Halcyon/assets/input-bg.png",
+    "layer0.texture": "Halcyon Theme/assets/input-bg.png",
     "layer0.inner_margin": [10, 8],
     "layer0.opacity": 0
   },
@@ -885,13 +902,13 @@
   },
   {
     "class": "label_control",
-    "parents": [{"class": "button_control"}],
-    "color":  [96, 112, 128]
+    "parents": [{ "class": "button_control" }],
+    "color": [96, 112, 128]
   },
   {
     "class": "label_control",
-    "parents": [{"class": "button_control", "attributes": ["hover"]}],
-    "color":  [255, 204, 102]
+    "parents": [{ "class": "button_control", "attributes": ["hover"] }],
+    "color": [255, 204, 102]
   },
   // !!!
   // Small Icon Buttons
@@ -900,7 +917,11 @@
     "layer0.tint": [0, 0, 0],
     "layer0.opacity": 0,
     "layer2.tint": [217, 215, 206],
-    "layer2.opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" },
+    "layer2.opacity": {
+      "target": 0.0,
+      "speed": 10.0,
+      "interpolation": "smoothstep"
+    },
     "content_margin": [10, 5]
   },
   /* Buttons icons settings
@@ -908,33 +929,33 @@
   // Regex Icon
   {
     "class": "icon_regex",
-    "layer0.texture": "Halcyon/assets/regex.png",
+    "layer0.texture": "Halcyon Theme/assets/regex.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
   {
     "class": "icon_regex",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   },
   // Preserve case sensitive
   {
     "class": "icon_case",
-    "layer0.texture": "Halcyon/assets/matchcase.png",
+    "layer0.texture": "Halcyon Theme/assets/matchcase.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
   {
     "class": "icon_case",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   },
   // Wholeword
   {
     "class": "icon_whole_word",
-    "layer0.texture": "Halcyon/assets/word.png",
+    "layer0.texture": "Halcyon Theme/assets/word.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
@@ -942,99 +963,98 @@
 
   {
     "class": "icon_whole_word",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   },
   // Wrap
   {
     "class": "icon_wrap",
-    "layer0.texture": "Halcyon/assets/wrap.png",
+    "layer0.texture": "Halcyon Theme/assets/wrap.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
   {
     "class": "icon_wrap",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   },
   // In selection
   {
     "class": "icon_in_selection",
-    "layer0.texture": "Halcyon/assets/inselection.png",
+    "layer0.texture": "Halcyon Theme/assets/inselection.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
   {
     "class": "icon_in_selection",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   },
   // Highlight Result
   {
     "class": "icon_highlight",
-    "layer0.texture": "Halcyon/assets/highlight.png",
+    "layer0.texture": "Halcyon Theme/assets/highlight.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
   {
     "class": "icon_highlight",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   },
   // Preserve Case
   {
     "class": "icon_preserve_case",
-    "layer0.texture": "Halcyon/assets/replace-preserve-case.png",
+    "layer0.texture": "Halcyon Theme/assets/replace-preserve-case.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
   {
     "class": "icon_preserve_case",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   },
   // Show context
   {
     "class": "icon_context",
-    "layer0.texture": "Halcyon/assets/context.png",
+    "layer0.texture": "Halcyon Theme/assets/context.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
   {
     "class": "icon_context",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   },
   // Use buffer
   {
     "class": "icon_use_buffer",
-    "layer0.texture": "Halcyon/assets/buffer.png",
+    "layer0.texture": "Halcyon Theme/assets/buffer.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
   {
     "class": "icon_use_buffer",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   },
   // Reverse direction
   {
     "class": "icon_reverse",
-    "layer0.texture": "Halcyon/assets/reverse.png",
+    "layer0.texture": "Halcyon Theme/assets/reverse.png",
     "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
   {
     "class": "icon_reverse",
-    "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
     "layer0.tint": [255, 204, 102]
   }
-
 ]

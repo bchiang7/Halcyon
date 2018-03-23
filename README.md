@@ -4,31 +4,37 @@
 
 ## Installation
 
-1. Open package control `Tools` → `Command Palette` and type `Install Package`
-2. Search for Halcyon and hit enter
-3. Then, open `Preferences` → `Settings - User`. Add the following lines.
+### Package Control
+
+1.  Open package control `Tools` → `Command Palette` and type `Install Package`
+2.  Search for Halcyon and hit enter
+3.  Then, open `Preferences` → `Settings - User`. Add the following lines.
 
 ```json
 "color_scheme": "Packages/Halcyon/Halcyon.tmTheme",
 "theme": "Halcyon.sublime-theme"
 ```
 
-4. Finally, restart Sublime for the Theme to be fully applied.
+4.  Finally, restart Sublime for the Theme to be fully applied.
 
 `color_scheme` defines how the code looks and `theme` defines how the sidebar, tabs, search, command palette work.
 
-## Manual Installation
+### Manual Installation
 
-1. Clone or download this repo
-1. Move the downloaded folder inside your sublime `Packages` directory. `Preferences > Browse packages...`
-1. Then, open `Preferences` → `Settings - User`. Add the following lines.
+1.  Clone or download this repo
+
+    `git clone git@github.com:bchiang7/Halcyon.git Halcyon\ Theme`
+
+1.  Make sure the downloaded folder is named `Halcyon Theme`. Don't forget the space!
+1.  Move the `Halcyon Theme` folder inside your sublime `Packages` directory. `Preferences > Browse packages...`
+1.  Then, open `Preferences` → `Settings - User`. Add the following lines.
 
 ```json
 "color_scheme": "Packages/Halcyon/Halcyon.tmTheme",
 "theme": "Halcyon.sublime-theme"
 ```
 
-1. Finally, restart Sublime for the Theme to be fully applied.
+1.  Finally, restart Sublime for the theme to be fully applied.
 
 ## Options
 
