@@ -11,8 +11,8 @@
 3.  Then, open `Preferences` → `Settings - User`. Add the following lines.
 
 ```json
-"color_scheme": "Packages/Halcyon/Halcyon.tmTheme",
-"theme": "Halcyon.sublime-theme"
+"color_scheme": "Packages/Halcyon Theme/halcyon.tmTheme",
+"theme": "halcyon.sublime-theme"
 ```
 
 4.  Finally, restart Sublime for the Theme to be fully applied.
@@ -30,8 +30,8 @@
 1.  Then, open `Preferences` → `Settings - User`. Add the following lines.
 
 ```json
-"color_scheme": "Packages/Halcyon/Halcyon.tmTheme",
-"theme": "Halcyon.sublime-theme"
+"color_scheme": "Packages/Halcyon Theme/halcyon.tmTheme",
+"theme": "halcyon.sublime-theme"
 ```
 
 1.  Finally, restart Sublime for the theme to be fully applied.
