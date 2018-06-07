@@ -1,6 +1,6 @@
 {
   "name": "halcyon",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A dark theme for Sublime Text based on the Ayu Mirage theme",
   "main": "index.js",
   "scripts": {
