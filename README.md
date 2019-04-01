@@ -1,4 +1,12 @@
-# Halcyon Theme for Sublime Text
+<p align="center">
+  <img alt="Halcyon" src="https://raw.githubusercontent.com/bchiang7/halcyon-vscode/master/images/logo.png" width="100" />
+</p>
+<h1 align="center">
+  Halcyon Theme for Sublime Text
+</h1>
+<p align="center">
+  A minimal, dark blue theme for VS Code, Sublime Text, Atom, and more.
+</p>
 
 ![demo](https://raw.githubusercontent.com/bchiang7/Halcyon/master/images/demo.png)
 
